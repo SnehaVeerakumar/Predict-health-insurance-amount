@@ -20,7 +20,9 @@
     <li>
       <a href="#Contributing">Contributing</a>
     </li>
-    <!-- <li><a href="#u">example</a></li> -->
+    <li>
+      <a href="#links">Dataset links</a>
+    </li>
   </ol>
 </details>
 <br>
@@ -37,5 +39,22 @@
 3. Commit your Changes (`git commit -m 'message'`)
 4. Push to the Branch (`git push origin test`)
 5. Open a Pull Request
+
+
+<!-- Getting started -->
+## Project set-up
+1. Clone the repository.
+  ```sh
+  git clone https://github.com/SnehaVeerakumar/Predict-health-insurance-amount.git
+   ```
+2. Install necessary python packages.
+  ```sh
+  pip install pandas
+  pip install pandas_profiling
+   ```
+
+## Dataset links
+1. Disease indicators : https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system 
+2. Insurance amount(insurance.csv) : https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
