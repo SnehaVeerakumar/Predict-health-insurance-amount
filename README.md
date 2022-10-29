@@ -49,8 +49,7 @@
    ```
 2. Install necessary python packages.
   ```sh
-  pip install pandas
-  pip install pandas_profiling
+  pip install -r requirements.txt
    ```
 
 ## Dataset links
