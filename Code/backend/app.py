@@ -17,6 +17,14 @@ def landing():
 def form():
     return render_template('form.html')
 
+@app.route('/signin')
+def signin():
+    return render_template('signin.html')
+
+@app.route('/bmi')
+def bmi():
+    return render_template('bmi.html')
+
 
 
 @app.route('/predict', methods=['POST','GET'])
