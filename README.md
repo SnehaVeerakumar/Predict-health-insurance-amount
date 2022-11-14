@@ -21,6 +21,9 @@
       <a href="#Contributing">Contributing</a>
     </li>
     <li>
+      <a href="#Project-set-up">Project set-up</a>
+    </li>
+    <li>
       <a href="#links">Dataset links</a>
     </li>
   </ol>
@@ -47,9 +50,20 @@
   ```sh
   git clone https://github.com/SnehaVeerakumar/Predict-health-insurance-amount.git
    ```
-2. Install necessary python packages.
+2. Activate virtual environment.
+  ```sh
+  pip install virtualenv
+  virtualenv venv
+  venv\Scripts\activate
+   ```
+3. Install necessary python packages.
   ```sh
   pip install -r requirements.txt
+   ```
+4. Start the server
+  ```sh
+  cd code/backend
+  python app.py
    ```
 
 ## Dataset links
