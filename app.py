@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 
-app = Flask(__name__, template_folder='../frontend', static_folder='../frontend/static')
+app = Flask(__name__, template_folder='/Code/frontend', static_folder='/Code/frontend/static')
 
 Pkl_Filename = "tunedRandomForest.pkl" 
 with open(Pkl_Filename, 'rb') as file:  
@@ -43,4 +43,4 @@ def predict():
         return render_template('predict.html', pred='{0:.3f}'.format(pred))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')

@@ -1,11 +1,13 @@
-FROM python:3.10.7
+FROM python:3.10
+
+#Use working directory /app
 WORKDIR /app
 
 #Copy all the content of current directory to /app
 ADD . /app
 
 #Installing required packages
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install -r requirements.txt
 
 #Open port 5000
 EXPOSE 5000
