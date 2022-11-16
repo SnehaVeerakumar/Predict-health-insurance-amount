@@ -13,9 +13,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <!-- <ul>
+      <ul>
         <li><a href="#built-with">Built With</a></li>
-      </ul> -->
+      </ul>
     </li>
     <li>
       <a href="#Contributing">Contributing</a>
@@ -33,6 +33,10 @@
 ## About The Project
 <p>The goal of the project is to build a machine learning web application which can predict the health insurance amount of the user based on the inputs such as their age, gender, body mass index, marital status, region, etc. The lifestyle of an individual has the greatest impact on their health and therefore we collect user’s habits to train and test the model. Users will gain access to a predictive model which will help them to plan their medical expenses well ahead of any medical emergencies. This project aims to provide an insight about the amount associated with an individual for their health insurance. </p>
 
+## Built with
+<h3>Flask, JavaScript, Docker, Azure, Jupyter and Visual Studio Code</h3>
+
+<br>
 
 <!-- CONTRIBUTING -->
 ## Contributing
