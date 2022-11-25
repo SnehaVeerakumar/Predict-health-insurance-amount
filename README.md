@@ -56,7 +56,6 @@
    ```
 2. Activate virtual environment.
   ```sh
-  pip install virtualenv
   virtualenv venv
   venv\Scripts\activate
    ```
