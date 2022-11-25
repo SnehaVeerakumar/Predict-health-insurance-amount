@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 
-app = Flask(__name__, template_folder='/Code/frontend', static_folder='/Code/frontend/static')
+app = Flask(__name__, template_folder='Code/frontend', static_folder='Code/frontend/static')
 
 Pkl_Filename = "tunedRandomForest.pkl" 
 with open(Pkl_Filename, 'rb') as file:  
