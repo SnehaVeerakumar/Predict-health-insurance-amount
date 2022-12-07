@@ -288,6 +288,17 @@ border-bottom: 2px solid transparent;
   z-index: 100;
   animation: appear 1s 1 both;
 }
+.download-btn{
+  background-color: DodgerBlue;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius:5px;
+}
+
+.download-btn:hover {
+  background-color: RoyalBlue;
+}
 
 @keyframes appear {
   0% {

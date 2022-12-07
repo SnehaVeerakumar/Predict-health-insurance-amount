@@ -4,32 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Health insurance</title>
+    <title>Health Insurance</title>
     <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/form.css" />
   </head>
   <body>
     <main>
       <div class="big-wrapper light">
-        <img src="" alt="" class="shape" />
-
         <header>
-          <div class="container">
+          <div class="container" id="navlist">
             <div class="logo">
               <img src="../static/img/logo.png" alt="Logo" />
-              <h3 href="{{ url_for('form') }}">Health Insurance Prediction</h3>
+              <h3>Health Insurance Prediction</h3>
             </div>
 
             <div class="links">
               <ul>
                 <li><a href="{{ url_for('form') }}" class="navlink">Predict</a></li>
-                <li><a href="{{ url_for('bmi') }}" class="navlink">BMI</a></li>
-                <li><a href="{{ url_for('signin') }}" class="btn">Sign up</a></li>
+                <li><a href="{{ url_for('forecast') }}" class="navlink">forecast</a></li>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="toggle-btn">
                   <i class="far fa-moon"></i>
                   <i class="far fa-sun"></i>
                 </button>
               </ul>
+              
             </div>
 
             <div class="overlay"></div>
@@ -40,27 +39,17 @@
           </div>
         </header>
 
+        <br><br>
+            
         <div class="showcase-area">
-          <div class="container">
-            <div class="left">
-              <div class="big-title">
-                <h3>This feature is coming soon !</h3>
-              </div>
-              <br>
-              <div class="cta">
-                <a href="{{ url_for('landing') }}" class="btn">Go home</a>
-              </div>
-            </div>
+          <br>
+           <img src="../static/img/forecast.png">
 
-            <div class="right">
-              <img src="../static/img/person.png " alt="Person Image" class="person" />
-            </div>
-          </div>
+      </div>
         </div>
       </div>
     </main>
 
-    <!-- JavaScript Files -->
 
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="../static/js/script.js"></script>

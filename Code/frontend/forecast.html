@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Insurance</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/form.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <!-- <img src="./img/shape.png" alt="" class="shape" /> -->
+
+        <header>
+          <div class="container" id="navlist">
+            <div class="logo">
+              <img src="../static/img/logo.png" alt="Logo" />
+              <h3>Health Insurance Prediction</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="{{ url_for('form') }}" class="navlink">Predict</a></li>
+                <li><a href="{{ url_for('forecast') }}" class="navlink">forecast</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="toggle-btn">
+                  <i class="far fa-moon"></i>
+                  <i class="far fa-sun"></i>
+                </button>
+              </ul>
+              
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <br><br>
+            
+        <div class="showcase-area">
+          <br>
+        <div class="container">
+          <div class="left">
+          <form action='/forecasted' action = "" enctype = "multipart/form-data" method="post"style="margin-bottom: 500px;">
+              <br>
+              <h2>Forecast your medical expense</h2>
+              <br>
+              <p>
+                Upload your file in CSV format. Download the sample file for better understanding of file format.
+              </p>
+              <br>
+              <a href="{{ url_for('download') }}" class="download-btn">Sample file
+                <i class="fa fa-download"></i>
+            </a>
+            <br><br> 
+            <h3>Upload your past medical expenses</h3>
+            
+            <input type="file" class ="custom-file-input" name = "file" id="file">
+            {% with messages = get_flashed_messages() %}  
+         {% if messages %}  
+               {% for message in messages %}  
+                    <p>{{ message }}</p>  
+               {% endfor %}  
+         {% endif %}  
+      {% endwith %}  
+          <br>
+              <button type="submit" class = "download-btn" name="action" value="Upload" style="border:none ;padding: 8px 10px;margin-top: 10px;">Upload</button>
+<br>
+              <div class="button">
+                  <input type="submit" name = "action" value="Forecast">
+                </div>
+                </form>
+          </div>
+
+        </div>
+      </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>
