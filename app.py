@@ -15,9 +15,7 @@ import math
 
 app = Flask(__name__, template_folder='Code/frontend', static_folder='Code/frontend/static')
 
-Pkl_Filename = "dnn_model.pkl" 
-with open(Pkl_Filename, 'rb') as file:  
-    model = pickle.load(file)
+model = pickle.load(open( "dnn_model.pkl", "rb" ))
 
 @app.route('/')
 def landing():
