@@ -12,10 +12,13 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM,Dense
 from adjustText import adjust_text
 import math
+import tarfile
 
 app = Flask(__name__, template_folder='Code/frontend', static_folder='Code/frontend/static')
 
-model = pickle.load(open( "dnn_model.pkl", "rb" ))
+Pkl_Filename = "dnn_model.pkl" 
+with tarfile.open(Pkl_Filename, 'rb') as file:  
+    model = pickle.load(file)
 
 @app.route('/')
 def landing():
