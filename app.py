@@ -15,11 +15,11 @@ import math
 
 app = Flask(__name__, template_folder='Code/frontend', static_folder='Code/frontend/static')
 
-Pkl_Filename = "dnn.pkl" 
+Pkl_Filename = "dnn_model.pkl" 
 with open(Pkl_Filename, 'rb') as file:  
     model = pickle.load(file)
-@app.route('/')
 
+@app.route('/')
 def landing():
     return render_template('landing.html')
 
