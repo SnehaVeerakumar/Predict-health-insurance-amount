@@ -172,4 +172,4 @@ def predict():
         return render_template('predict.html', pred='{0:.3f}'.format(pred[0][0]))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
