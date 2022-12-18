@@ -42,7 +42,8 @@ def forecasted():
         expense = pd.DataFrame(data['Amount'])
         scaler = StandardScaler()
         scaled_expense=scaler.fit_transform(expense)
-        train_size = 36
+        size = len(expense)
+        train_size = size-12
         lookback=12
         train_amount = scaled_expense[0:train_size,:]
         test_requests = scaled_expense[train_size-lookback:,:]
@@ -89,7 +90,6 @@ def forecasted():
         d1 = dfd.dt.to_period('M')
         d1 = d1.iloc[2:]
         d1.astype(str)
-
         total_size = len(predict_on_train) + len(predict_on_test) + len(predict_on_future)
 
         #Training data predictions
@@ -109,7 +109,7 @@ def forecasted():
 
         df = np.concatenate((predict_on_train, predict_on_test,predict_on_future))
 
-        plt.figure(figsize=(20,10)).suptitle("Plot Predictions for Training, Test & Forecast Data", fontsize=20,)
+        plt.figure(figsize=(20,10)).suptitle("Plot Predictions for Training, Test & Forecast Data", fontsize=17,)
         plt.xticks(np.arange(len(d1)),d1,rotation=30)
         plt.plot(predict_train_plot)
         plt.plot(predict_test_plot)
@@ -121,6 +121,8 @@ def forecasted():
                 if(i >=len(predict_on_train)+len(predict_on_test)):
                         texts.append(plt.text(math.floor(i), v+25, "%d" %v, ha="center"))
         adjust_text(texts, only_move={'points':'y', 'texts':'xy'})
+
+ 
         plt.savefig('Code/frontend/static/img/forecast.png', transparent=True)
         return render_template('forecasted.html')
     
@@ -143,28 +145,28 @@ def download():
                  "attachment; filename=sample.csv"}) 
     
 
-df = pd.read_csv('Dataset/processedData.csv')
-training_data_df,test_data_df = train_test_split(df,test_size=0.2,random_state=20)
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled_training = scaler.fit_transform(training_data_df)
-scaled_testing = scaler.transform(test_data_df)
-training_data_df = pd.DataFrame(scaled_training, columns=training_data_df.columns.values)
-test_data_df = pd.DataFrame(scaled_testing, columns=test_data_df.columns.values)
-X = training_data_df.drop('charges', axis=1).values
-Y = training_data_df[['charges']].values
-model = Sequential()
-model.add(Dense(50, input_dim=6, activation='relu'))
-model.add(Dense(100, activation='relu'))
-model.add(Dense(50, activation='relu'))
-model.add(Dense(1, activation='linear'))
-model.compile(loss='mean_squared_error', optimizer='adam')
-model.fit(
-    X,
-    Y,
-    epochs=50,
-    shuffle=True,
-    verbose=2
-)
+# df = pd.read_csv('Dataset/processedData.csv')
+# training_data_df,test_data_df = train_test_split(df,test_size=0.2,random_state=20)
+# scaler = MinMaxScaler(feature_range=(0, 1))
+# scaled_training = scaler.fit_transform(training_data_df)
+# scaled_testing = scaler.transform(test_data_df)
+# training_data_df = pd.DataFrame(scaled_training, columns=training_data_df.columns.values)
+# test_data_df = pd.DataFrame(scaled_testing, columns=test_data_df.columns.values)
+# X = training_data_df.drop('charges', axis=1).values
+# Y = training_data_df[['charges']].values
+# model = Sequential()
+# model.add(Dense(50, input_dim=6, activation='relu'))
+# model.add(Dense(100, activation='relu'))
+# model.add(Dense(50, activation='relu'))
+# model.add(Dense(1, activation='linear'))
+# model.compile(loss='mean_squared_error', optimizer='adam')
+# model.fit(
+#     X,
+#     Y,
+#     epochs=50,
+#     shuffle=True,
+#     verbose=2
+# )
 
 @app.route('/predict', methods=['POST','GET'])
 def predict():

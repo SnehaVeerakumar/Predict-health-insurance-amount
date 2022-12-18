@@ -89,8 +89,6 @@ header .container {
 
 .logo img {
   width: 40px;
-  margin-right: 0.6rem;
-  margin-top: -0.6rem;
 }
 
 .logo h3 {
@@ -124,7 +122,7 @@ border-bottom: 2px solid transparent;
     width:40%;
 }
 
-.links .navlink {
+.links .navlink { 
   color: var(--darkTwo);
   margin-left: 4.5rem;
   display: inline-block;
@@ -132,7 +130,7 @@ border-bottom: 2px solid transparent;
 }
 
 .links a:hover {
-  color: var(--hoverColor);
+  color:var(--darkTwo) ;
   transform: scale(1.05);
 }
 

@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.light {
+  --mainColor: #64bcf4;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #f1f8fc;
+  --darkOne: #312f3a;
+  --darkTwo: #45424b;
+  --lightOne: #919191;
+  --lightTwo: #aaa;
+}
+
+.dark {
+  --mainColor: #64bcf4;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #192e3a;
+  --darkOne: #f3f3f3;
+  --darkTwo: #fff;
+  --lightOne: #ccc;
+  --lightTwo: #e7e3e3;
+}
 
 form{
   max-width: 700px;
@@ -6,9 +25,12 @@ form{
   background-color: rgba(255, 255, 255, 0.712);
   padding: 25px 30px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  margin-left: 300px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15); 
+  margin-left: calc(100% / 4 - 50px);
+  justify-content: center;
+  align-items: center;
 }
+
 form .title{
   font-size: 25px;
   font-weight: 500;
@@ -101,7 +123,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 35px 0;
  }
  form .button input{
    height: 100%;
@@ -121,7 +143,7 @@ form .input-box span.details{
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
  @media(max-width: 584px){
- .container{
+ .container1{
   max-width: 100%;
 }
 form .user-details .input-box{
@@ -140,7 +162,7 @@ form .user-details .input-box{
   }
   }
   @media(max-width: 459px){
-  .container .content .category{
+  .container1 .content .category{
     flex-direction: column;
   }
 }
