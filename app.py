@@ -145,28 +145,28 @@ def download():
                  "attachment; filename=sample.csv"}) 
     
 
-# df = pd.read_csv('Dataset/processedData.csv')
-# training_data_df,test_data_df = train_test_split(df,test_size=0.2,random_state=20)
-# scaler = MinMaxScaler(feature_range=(0, 1))
-# scaled_training = scaler.fit_transform(training_data_df)
-# scaled_testing = scaler.transform(test_data_df)
-# training_data_df = pd.DataFrame(scaled_training, columns=training_data_df.columns.values)
-# test_data_df = pd.DataFrame(scaled_testing, columns=test_data_df.columns.values)
-# X = training_data_df.drop('charges', axis=1).values
-# Y = training_data_df[['charges']].values
-# model = Sequential()
-# model.add(Dense(50, input_dim=6, activation='relu'))
-# model.add(Dense(100, activation='relu'))
-# model.add(Dense(50, activation='relu'))
-# model.add(Dense(1, activation='linear'))
-# model.compile(loss='mean_squared_error', optimizer='adam')
-# model.fit(
-#     X,
-#     Y,
-#     epochs=50,
-#     shuffle=True,
-#     verbose=2
-# )
+df = pd.read_csv('Dataset/processedData.csv')
+training_data_df,test_data_df = train_test_split(df,test_size=0.2,random_state=20)
+scaler = MinMaxScaler(feature_range=(0, 1))
+scaled_training = scaler.fit_transform(training_data_df)
+scaled_testing = scaler.transform(test_data_df)
+training_data_df = pd.DataFrame(scaled_training, columns=training_data_df.columns.values)
+test_data_df = pd.DataFrame(scaled_testing, columns=test_data_df.columns.values)
+X = training_data_df.drop('charges', axis=1).values
+Y = training_data_df[['charges']].values
+model = Sequential()
+model.add(Dense(50, input_dim=6, activation='relu'))
+model.add(Dense(100, activation='relu'))
+model.add(Dense(50, activation='relu'))
+model.add(Dense(1, activation='linear'))
+model.compile(loss='mean_squared_error', optimizer='adam')
+model.fit(
+    X,
+    Y,
+    epochs=50,
+    shuffle=True,
+    verbose=2
+)
 
 @app.route('/predict', methods=['POST','GET'])
 def predict():
