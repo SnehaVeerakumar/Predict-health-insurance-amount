@@ -20,15 +20,20 @@
 
             <div class="links">
               <ul>
-                <li><a href="{{ url_for('form') }}" class="navlink">Predict</a></li>
-                <li><a href="{{ url_for('forecast') }}" class="navlink">forecast</a></li>
+                <li>
+                  <a href="{{ url_for('form') }}" class="navlink">Predict</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('forecast') }}" class="navlink"
+                    >forecast</a
+                  >
+                </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="toggle-btn">
                   <i class="far fa-moon"></i>
                   <i class="far fa-sun"></i>
                 </button>
               </ul>
-              
             </div>
 
             <div class="overlay"></div>
@@ -39,29 +44,35 @@
           </div>
         </header>
 
-        <br><br>
-            
-          <div class="showcase-area">
-            <br>
+        <br /><br />
+
+        <div class="showcase-area">
+          <br />
           <div class="container1">
             <div class="left">
-            <form action='/predict' method="post">
-                <br>
+              <form action="/predict" method="post">
+                <br />
                 <h2>Enter your details</h2>
-                <br>
+                <br />
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Age</span>
-                        <input type="text" placeholder="Your age" required name="age" id="age">
-                    </div>
+                  <div class="input-box">
+                    <span class="details">Age</span>
+                    <input
+                      type="text"
+                      placeholder="Your age"
+                      required
+                      name="age"
+                      id="age"
+                    />
+                  </div>
                 </div>
 
-                  <div class="gender-details">
-                    <input type="radio" name="Gender" id="dot-1" value="0">
-                    <input type="radio" name="Gender" id="dot-2" value="1">
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                      <label for="dot-1">
+                <div class="gender-details">
+                  <input type="radio" name="Gender" id="dot-1" value="0" />
+                  <input type="radio" name="Gender" id="dot-2" value="1" />
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
                       <span class="dot one"></span>
                       <span class="gender">Male</span>
                     </label>
@@ -69,29 +80,43 @@
                       <span class="dot two"></span>
                       <span class="gender">Female</span>
                     </label>
-                    </div>
                   </div>
-
-                <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">BMI</span>
-                        <input type="text" placeholder="Your BMI" required name="bmi" id="bmi" class="validate">
-                    </div>
                 </div>
 
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Number of children</span>
-                        <input type="text" placeholder="Children count" required name="children" id="children" class="validate">
-                    </div>
+                  <div class="input-box">
+                    <span class="details">BMI</span>
+                    <input
+                      type="text"
+                      placeholder="Your BMI"
+                      required
+                      name="bmi"
+                      id="bmi"
+                      class="validate"
+                    />
+                  </div>
+                </div>
+
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Number of children</span>
+                    <input
+                      type="text"
+                      placeholder="Children count"
+                      required
+                      name="children"
+                      id="children"
+                      class="validate"
+                    />
+                  </div>
                 </div>
 
                 <div class="gender-details">
-                    <input type="radio" name="smoker" id="smoker1" value="1">
-                    <input type="radio" name="smoker" id="smoker2" value="0">
-                    <span class="gender-title">Are you a smoker ?</span>
-                    <div class="category">
-                      <label for="smoker1">
+                  <input type="radio" name="smoker" id="smoker1" value="1" />
+                  <input type="radio" name="smoker" id="smoker2" value="0" />
+                  <span class="gender-title">Are you a smoker ?</span>
+                  <div class="category">
+                    <label for="smoker1">
                       <span class="dot one"></span>
                       <span class="gender">Yes</span>
                     </label>
@@ -99,17 +124,17 @@
                       <span class="dot two"></span>
                       <span class="gender">No</span>
                     </label>
-                    </div>
+                  </div>
                 </div>
 
                 <div class="gender-details">
-                    <input type="radio" name="region" id="region1" value="0">
-                    <input type="radio" name="region" id="region2" value="1">
-                    <input type="radio" name="region" id="region3" value="2">
-                    <input type="radio" name="region" id="region4" value="3">
-                    <span class="gender-title">Region</span>
-                    <div class="category">
-                      <label for="region1">
+                  <input type="radio" name="region" id="region1" value="0" />
+                  <input type="radio" name="region" id="region2" value="1" />
+                  <input type="radio" name="region" id="region3" value="2" />
+                  <input type="radio" name="region" id="region4" value="3" />
+                  <span class="gender-title">Region</span>
+                  <div class="category">
+                    <label for="region1">
                       <span class="dot one"></span>
                       <span class="gender">North West</span>
                     </label>
@@ -118,23 +143,21 @@
                       <span class="gender">North East</span>
                     </label>
                     <label for="region3">
-                        <span class="dot three"></span>
-                        <span class="gender">South East</span>
-                      </label>
-                    <label for="region4">
-                        <span class="dot four"></span>
-                        <span class="gender">South West</span>
+                      <span class="dot three"></span>
+                      <span class="gender">South East</span>
                     </label>
-                    </div>
+                    <label for="region4">
+                      <span class="dot four"></span>
+                      <span class="gender">South West</span>
+                    </label>
+                  </div>
                 </div>
 
                 <div class="button">
-                    <input type="submit" value="Predict">
-                  </div>
-
+                  <input type="submit" value="Predict" />
+                </div>
               </form>
             </div>
-
           </div>
         </div>
       </div>
