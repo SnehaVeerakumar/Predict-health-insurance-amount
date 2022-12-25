@@ -32,9 +32,9 @@
     <li>
       <a href="#contributing">Contributing</a>
     </li>
-    <li>
+    <!-- <li>
       <a href="project-workflow">Project workflow</a>
-    </li>
+    </li> -->
     <li>
       <a href="#links">Dataset links</a>
     </li>
@@ -43,7 +43,14 @@
 
 
 ## About The Project
-<p>The goal of the project is to build a machine learning web application which can predict the health insurance amount of the user based on the inputs such as their age, gender, body mass index, marital status, region, etc. The lifestyle of an individual has the greatest impact on their health and therefore we collect user’s habits to train and test the model. Users will gain access to a predictive model which will help them to plan their medical expenses well ahead of any medical emergencies. This project aims to provide an insight about the amount associated with an individual for their health insurance. </p>
+<p> The purpose of this project work was to build an efficient model to predict the health
+insurance amount. Various machine learning models were compared with Deep
+Neural Network model. With the evaluation metric being Mean Squared Error, DNN
+model outperformed the machine learning models, which is then used to serve the
+end users. The end-to-end application ensures the continuous integration and
+continuous deployment of the application to the users. Using Agile Software
+Development Lifecycle, the project is built following all the engineering standards,
+rules and regulations.</p>
 
 ## Built with
 <p>Flask, JavaScript, Azure, Docker,Visual Studio Code and Jupyter</p>
@@ -111,10 +118,8 @@ Pull Image
 4. Push to the Branch (`git push origin test`)
 5. Open a Pull Request
 
-## Project workflow
-<p>
-<img src="images/workflow.png" width="300" />
-</p>
+<!-- ## Project workflow
+<img src="/images/workflow.png" width="400" /> -->
 
 ## Dataset links
 1. Disease indicators : https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system 
