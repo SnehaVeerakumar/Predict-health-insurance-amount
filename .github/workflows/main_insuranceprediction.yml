@@ -48,4 +48,4 @@ jobs:
         app-name: 'insuranceprediction'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4870aac009d443bc81ce5ff108c34d93 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_69fee6d94c9444479679bc28432ad3f0 }}/snehaveerakumar/insuranceprediction:${{ github.sha }}'
+        images: 'snehaveerakumar/insuranceprediction:latest'
