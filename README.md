@@ -18,10 +18,22 @@
       </ul>
     </li>
     <li>
-      <a href="#Contributing">Contributing</a>
+      <a href="#project-set-up">Project set-up</a>
     </li>
     <li>
-      <a href="#Project-set-up">Project set-up</a>
+      <a href="#project-set-up-in-docker-desktop">Docker Desktop to deploy app</a>
+    </li>
+    <li>
+      <a href="#docker-hub-repository">Docker Hub Repository </a>
+    </li>
+    <li>
+      <a href="#project-folder-description">Project folder description</a>
+    </li>
+    <li>
+      <a href="#contributing">Contributing</a>
+    </li>
+    <li>
+      <a href="project-workflow">Project workflow</a>
     </li>
     <li>
       <a href="#links">Dataset links</a>
@@ -35,7 +47,7 @@
 
 ## Built with
 <p>Flask, JavaScript, Azure, Docker,Visual Studio Code and Jupyter</p>
-<img src="Images/Tools.jpeg" alt="Tools and Technologies" width="250"/>
+<iframe src="https://drive.google.com/file/d/1q2-294wMYhZOM3QFkF0hvdjlP4M382Z-/preview" width="300" allow="autoplay"></iframe>
 <br>
 
 <!-- Getting started -->
@@ -100,7 +112,7 @@ Pull Image
 5. Open a Pull Request
 
 ## Project workflow
-<img src="Images/project_flowchart.png" alt="Project workflow" width="400"/>
+<iframe src="https://drive.google.com/file/d/1Sx31L1A1DS_X_MmWzGshOYa3ykbybDPV/preview" width="400" allow="autoplay"></iframe>
 
 ## Dataset links
 1. Disease indicators : https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system 
