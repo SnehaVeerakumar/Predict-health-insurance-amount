@@ -47,7 +47,7 @@
 
 ## Built with
 <p>Flask, JavaScript, Azure, Docker,Visual Studio Code and Jupyter</p>
-<iframe src="https://drive.google.com/file/d/1q2-294wMYhZOM3QFkF0hvdjlP4M382Z-/preview" width="300" allow="autoplay"></iframe>
+
 <br>
 
 <!-- Getting started -->
@@ -112,7 +112,9 @@ Pull Image
 5. Open a Pull Request
 
 ## Project workflow
-<iframe src="https://drive.google.com/file/d/1Sx31L1A1DS_X_MmWzGshOYa3ykbybDPV/preview" width="400" allow="autoplay"></iframe>
+<p>
+<img src="images/workflow.png" width="300" />
+</p>
 
 ## Dataset links
 1. Disease indicators : https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system 
