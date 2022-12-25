@@ -93,13 +93,13 @@ stack-data==0.6.2
 statsmodels==0.13.5
 tangled-up-in-unicode==0.2.0
 tenacity==8.1.0
-tensorboard==2.11.0
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
-tensorflow==2.11.0
-tensorflow-estimator==2.11.0
-tensorflow-intel==2.11.0
-tensorflow-io-gcs-filesystem==0.28.0
+# tensorboard==2.11.0
+# tensorboard-data-server==0.6.1
+# tensorboard-plugin-wit==1.8.1
+# tensorflow==2.11.0
+# tensorflow-estimator==2.11.0
+# tensorflow-intel==2.11.0
+# tensorflow-io-gcs-filesystem==0.28.0
 termcolor==2.1.1
 threadpoolctl==3.1.0
 tornado==6.2
@@ -114,3 +114,4 @@ Werkzeug==2.2.2
 widgetsnbextension==4.0.3
 wrapt==1.14.1
 xgboost==1.7.1
+https://tf.novaal.de/core2/tensorflow-2.8.0-cp39-cp39-linux_x86_64.whl
