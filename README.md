@@ -89,6 +89,7 @@ rules and regulations.</p>
 
 ## Docker Hub Repository 
 Link : https://hub.docker.com/r/snehaveerakumar/insuranceprediction
+<br>
 Pull Image
   ```sh
   docker pull snehaveerakumar/insuranceprediction
