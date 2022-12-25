@@ -68,7 +68,7 @@ a {
 
 header {
   position: relative;
-  z-index: 70
+  z-index: 70;
 }
 
 header .container {
@@ -111,18 +111,23 @@ header .container {
   transition: 0.3s;
 }
 
-.links .navlink{
-  content : "";
+.links .navlink {
+  content: "";
   left: 0;
-  bottom  : 0;
-  height  : 30px;
-border-bottom: 2px solid transparent;
-    border-image: linear-gradient(0.25turn, rgb(34, 222, 255), rgb(46, 60, 192), rgba(56,2,155,0));
-    border-image-slice: 1;
-    width:40%;
+  bottom: 0;
+  height: 30px;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgb(34, 222, 255),
+    rgb(46, 60, 192),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 40%;
 }
 
-.links .navlink { 
+.links .navlink {
   color: var(--darkTwo);
   margin-left: 4.5rem;
   display: inline-block;
@@ -130,7 +135,7 @@ border-bottom: 2px solid transparent;
 }
 
 .links a:hover {
-  color:var(--darkTwo) ;
+  color: var(--darkTwo);
   transform: scale(1.05);
 }
 
@@ -286,12 +291,12 @@ border-bottom: 2px solid transparent;
   z-index: 100;
   animation: appear 1s 1 both;
 }
-.download-btn{
+.download-btn {
   background-color: DodgerBlue;
   color: white;
   padding: 10px 10px;
   text-decoration: none;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .download-btn:hover {
@@ -343,7 +348,6 @@ border-bottom: 2px solid transparent;
     margin-left: 0;
     padding: 2rem 0;
   }
-
 
   .links .btn {
     background: none;

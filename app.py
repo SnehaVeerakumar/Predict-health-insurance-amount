@@ -125,15 +125,7 @@ def forecasted():
  
         plt.savefig('Code/frontend/static/img/forecast.png', transparent=True)
         return render_template('forecasted.html')
-    
-@app.route('/signin')
-def signin():
-    return render_template('signin.html')
-
-@app.route('/bmi')
-def bmi():
-    return render_template('bmi.html')
-
+        
 @app.route('/download')
 def download():
     with open("Dataset/monthlyExpense.csv") as fp:

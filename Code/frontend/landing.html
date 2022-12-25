@@ -16,13 +16,21 @@
           <div class="container">
             <div class="logo">
               <img src="../static/img/logo.png" alt="Logo" />
-              <h3 href="{{ url_for('landing') }}">Health Insurance Prediction</h3>
+              <h3 href="{{ url_for('landing') }}">
+                Health Insurance Prediction
+              </h3>
             </div>
 
             <div class="links">
               <ul>
-                <li><a href="{{ url_for('form') }}" class="navlink">Predict</a></li>
-                <li><a href="{{ url_for('forecast') }}" class="navlink">Forecast</a></li>
+                <li>
+                  <a href="{{ url_for('form') }}" class="navlink">Predict</a>
+                </li>
+                <li>
+                  <a href="{{ url_for('forecast') }}" class="navlink"
+                    >Forecast</a
+                  >
+                </li>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="toggle-btn">
                   <i class="far fa-moon"></i>
@@ -43,13 +51,14 @@
           <div class="container">
             <div class="left">
               <div class="big-title">
-                <h1>Predict your </h1>
+                <h1>Predict your</h1>
                 <h1>Health Insurance Amount</h1>
               </div>
               <p class="text">
-                A health insurance policy ensures that you can avail cashless treatment at a 
-                network hospital, typically covering 30 days and 60 days pre and post 
-                hospitalization, respectively, in most of the Health Insurance plans.
+                A health insurance policy ensures that you can avail cashless
+                treatment at a network hospital, typically covering 30 days and
+                60 days pre and post hospitalization, respectively, in most of
+                the Health Insurance plans.
               </p>
               <div class="cta">
                 <a href="{{ url_for('form') }}" class="btn">Get started</a>
@@ -57,7 +66,11 @@
             </div>
 
             <div class="right">
-              <img src="../static/img/person.png " alt="Person Image" class="person" />
+              <img
+                src="../static/img/person.png "
+                alt="Person Image"
+                class="person"
+              />
             </div>
           </div>
         </div>
