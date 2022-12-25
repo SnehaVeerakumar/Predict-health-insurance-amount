@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_69fee6d94c9444479679bc28432ad3f0 }}/snehaveerakumar/insuranceprediction:${{ github.sha }}
+        tags: snehaveerakumar/insuranceprediction:latest
         file: ./Dockerfile
 
   deploy:
