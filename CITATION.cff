@@ -1,8 +1,8 @@
 cff-version: 1.0.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Veerakumar
-    given-names: Sneha
+  - given-names: Sneha
+    family-names: Veerakumar
 title: "Predict Health Insurance Amount Using DNN"
 version: 1.0.0
 date-released: 2022-12-26
