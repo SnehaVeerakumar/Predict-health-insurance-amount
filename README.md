@@ -32,9 +32,6 @@
     <li>
       <a href="#contributing">Contributing</a>
     </li>
-    <!-- <li>
-      <a href="project-workflow">Project workflow</a>
-    </li> -->
     <li>
       <a href="#links">Dataset links</a>
     </li>
@@ -118,9 +115,6 @@ Pull Image
 3. Commit your Changes (`git commit -m 'message'`)
 4. Push to the Branch (`git push origin test`)
 5. Open a Pull Request
-
-<!-- ## Project workflow
-<img src="/images/workflow.png" width="400" /> -->
 
 ## Dataset links
 1. Disease indicators : https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system 
