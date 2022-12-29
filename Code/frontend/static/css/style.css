@@ -91,7 +91,7 @@ header .container {
   width: 40px;
 }
 
-.logo h3 {
+.heading{
   color: var(--darkTwo);
   font-size: 1.55rem;
   line-height: 1.2;

@@ -56,6 +56,8 @@ rules and regulations.</p>
 
 <!-- Getting started -->
 ## Project set-up
+Note for Windows user : Before step-3, uncomment line no.95 to 101 and delete the line no.116.
+
 1. Clone the repository.
   ```sh
   git clone https://github.com/SnehaVeerakumar/Predict-health-insurance-amount.git
